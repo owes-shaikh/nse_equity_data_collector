@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Stock Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-text">Stock Dashboard</h1>
+        <form method="post" action="/result" class="center-text">
+            <label for="symbol">Enter Stock Symbol:</label>
+            <input type="text" id="symbol" name="symbol" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if symbol %}
+            <h2 class="center-text">Stock Symbol: {{ symbol }}</h2>
+            <div class="center-text">
+                {{ data|safe }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
