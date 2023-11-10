@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0; /* Light green background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #a0c954; /* Light green color for the submit button */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6b8f3f; /* Darker green color on hover */
+}
+
+h1, h2 {
+    color: #a0c954; /* Light green color for headers */
+}
